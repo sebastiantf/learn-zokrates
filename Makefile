@@ -1,6 +1,8 @@
 # make program=root inputs="5 25"
 # make program=root inputs="12 144"
 
+# make program=sha256-preimage inputs="0 0 0 5 --verbose"
+
 all: compile setup compute-witness generate-proof export-verifier verify clean
 
 compile:
